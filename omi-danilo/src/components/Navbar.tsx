@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <nav className="relative w-full h-[calc(15vh-1rem)] rounded-b-[20px] shadow-md bg-zinc-800 flex flex-row items-center justify-center">
-      <AppLogo className="absolute top-0 left-4 rounded-[20px] mt-1" />
+      <AppLogo className="absolute top-0 left-4 rounded-[20px] mt-1 h-[calc(95%-1rem)] w-[calc(15%-1rem)]" />
       <button
         onClick={() => context.setShowInstructions(true)}
         className="text-white absolute right-60 text-[36px] hover:underline"
