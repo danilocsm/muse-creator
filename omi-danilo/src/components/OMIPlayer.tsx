@@ -87,7 +87,7 @@ function OMIPlayer() {
       }}
     >
       <div className="relative w-screen grid place-items-center mt-4">
-        <div className="absolute left-0 top-0  w-[calc(15vw-1rem)] h-[calc(40vh-1rem)] rounded-[20px] ml-4 grid place-items-center bg-zinc-400">
+        <div className="absolute left-0 top-0  bg-opacity-20 w-[calc(15vw-1rem)] h-[calc(40vh-1rem)] rounded-[20px] ml-4 grid place-items-center bg-zinc-400">
           <RadioGroup
             value={synthName}
             onChange={(instrument: string) => {
