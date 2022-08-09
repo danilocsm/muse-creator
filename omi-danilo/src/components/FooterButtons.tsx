@@ -7,6 +7,7 @@ import { PlayerContext } from "./OMIPlayer";
 
 const notesVariations = ["2n", "4n", "8n"];
 const notesVelocities = [1, 1.25, 1.5, 1.75, 2];
+const notesDuration = [0.1, 0.5, 1];
 
 function FooterButtons() {
   const [variation, setVariation] = useState<string>("8n");
@@ -28,14 +29,14 @@ function FooterButtons() {
         }}
         className={`${
           context.playMusic ? "text-red-600" : "text-green-600"
-        } bg-zinc-300 rounded-full w-[50px] h-[50px] grid place-items-center hover:opacity-50`}
+        } bg-zinc-200 rounded-full w-[60px] h-[60px] grid place-items-center hover:opacity-50`}
       >
-        {(context.playMusic && <Stop size={36} />) || <Play size={36} />}
+        {(context.playMusic && <Stop size={50} />) || <Play size={50} />}
       </button>
 
       <button
         onClick={() => setShowNotesInput(!showNotesInput)}
-        className="flex flex-row items-center justify-center gap-x-2 rounded-[20px] bg-zinc-300 h-[50px] w-[100px] hover:opacity-50"
+        className="flex flex-row items-center justify-center gap-x-2 rounded-[20px] bg-zinc-200 h-[50px] w-[100px] hover:opacity-50"
       >
         <Plus size={40} />
         <MusicNotes size={40} />

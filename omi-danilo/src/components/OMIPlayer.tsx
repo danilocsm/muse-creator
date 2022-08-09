@@ -46,7 +46,7 @@ function OMIPlayer() {
   const [synthName, setSynthName] = useState<string>("Tipo 1");
   const [synth, setSynth] = useState<any>(synth1);
   const [notesSequence, setNotesSequence] = useState<
-    { note: string; id: number }[]
+    { note: string; id: number; duration: number }[]
   >([]);
   const [notesVariation, setNotesVariation] = useState<string>("");
   const [playMusic, setPlayMusic] = useState<boolean>(false);
@@ -87,7 +87,10 @@ function OMIPlayer() {
       }}
     >
       <div className="relative w-screen grid place-items-center mt-4">
-        <div className="absolute left-0 top-0  bg-opacity-20 w-[calc(15vw-1rem)] h-[calc(40vh-1rem)] rounded-[20px] ml-4 grid place-items-center bg-zinc-400">
+        <div className="absolute left-0 top-0  bg-opacity-20 w-[calc(15vw-1rem)] h-[calc(30vh-1rem)] rounded-[20px] ml-4 grid place-items-center bg-zinc-400">
+          <label className="text-[20px] font-bold place-self-center">
+            SINTETIZADOR
+          </label>
           <RadioGroup
             value={synthName}
             onChange={(instrument: string) => {
@@ -97,9 +100,6 @@ function OMIPlayer() {
             }}
             className="h-fit px-6 place-self-center"
           >
-            <RadioGroup.Label className="text-[20px] font-bold">
-              Selecione o tipo de instrumento
-            </RadioGroup.Label>
             <div className="grid grid-cols-2 gap-2">
               {instruments.map((instrument) => {
                 return (
@@ -117,7 +117,7 @@ function OMIPlayer() {
                     }
                   >
                     <div className="flex w-full items-center justify-center">
-                      <div className="text-[20px] text-center font-bold">
+                      <div className="text-[16px] text-center font-bold">
                         {instrument}
                       </div>
                     </div>

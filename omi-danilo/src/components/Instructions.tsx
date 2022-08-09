@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { XCircle } from "phosphor-react";
 import { useContext } from "react";
 import { OMIContext } from "./OMI";
@@ -26,7 +26,7 @@ const Instructions = () => {
       <motion.ol
         initial={{ display: "block" }}
         exit={{ display: "none" }}
-        className="absolute top-10 left-[calc(30%-1rem)] w-[500px] gap-y-2"
+        className="absolute top-10 left-[calc(30%-1rem)] w-[500px]"
       >
         <li className="font-serif text-[22px] text-left w-full">
           1. Primeiro, selecione um tipo de instrumento.

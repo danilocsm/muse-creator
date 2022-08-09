@@ -6,7 +6,7 @@ import NoteTag from "./NoteTag";
 interface NotesInputProps {
   setNotesSequence: (oldValues: any) => void;
   setShowInput: (oldValues: any) => void;
-  notesSequence: { note: string; id: number }[];
+  notesSequence: { note: string; id: number; duration: number }[];
 }
 
 const notes = [
@@ -64,7 +64,7 @@ function NotesInput({
       <motion.div
         initial={{ display: "flex" }}
         exit={{ display: "none" }}
-        className="flex-wrap flex-row gap-2 justify-center w-[calc(70%-1rem)] h-[350px] overflow-y-auto overflow-x-hidden p-4"
+        className="flex-wrap flex-row gap-2 justify-center w-[calc(70%-1rem)] h-[350px] overflow-y-auto overflow-x-hidden p-4 border-[1px] border-black rounded-[20px]"
       >
         {notesSequence?.length > 0 &&
           notesSequence.map((note) => {
