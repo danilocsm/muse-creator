@@ -1,7 +1,7 @@
 interface NoteTagProps {
   onClick: (oldValues: any) => void;
   note: { note: string; id: number };
-  bgColor: string;
+  bgColor: string | undefined;
 }
 
 function NoteTag({ note, onClick, bgColor }: NoteTagProps) {
