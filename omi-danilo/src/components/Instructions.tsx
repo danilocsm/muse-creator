@@ -26,7 +26,7 @@ const Instructions = () => {
       <motion.ol
         initial={{ display: "block" }}
         exit={{ display: "none" }}
-        className="absolute top-10 left-[calc(30%-1rem)] w-[500px]"
+        className="absolute top-10 left-[calc(30%-1rem)] w-[calc(50vw-1rem)]"
       >
         <li className="font-serif text-[22px] text-left w-full">
           1. Primeiro, selecione um tipo de instrumento.
@@ -52,7 +52,11 @@ const Instructions = () => {
           prefereir, clique na lixeira para limpar todas as notas!
         </li>
         <li className="font-serif text-[22px] text-left w-full">
-          7. Use sua criatividade para criar os mais diversos tipos de melodias.
+          7. Sempre que quiser trocar as configurações, aperte no pause e dê
+          play novamente para as novas configurações entrarem em ação.
+        </li>
+        <li className="font-serif text-[22px] text-left w-full">
+          8. Use sua criatividade para criar os mais diversos tipos de melodias.
           DIVIRTA-SE.{" "}
         </li>
       </motion.ol>
