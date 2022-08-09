@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.tsx"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "app-background": "url('public/appImageBackground.png')",
+      },
+    },
   },
   plugins: [],
 };

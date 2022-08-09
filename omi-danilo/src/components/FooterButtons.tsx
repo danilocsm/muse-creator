@@ -70,7 +70,7 @@ function FooterButtons() {
                       ? "ring-2 ring-white ring-opacity-60 ring-offset-2"
                       : ""
                   }
-                  ${checked ? "bg-green-500" : "bg-zinc-300"}
+                  ${checked ? "bg-cyan-500" : "bg-zinc-300"}
                     flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none`
                 }
               >
@@ -105,7 +105,7 @@ function FooterButtons() {
                       ? "ring-2 ring-white ring-opacity-60 ring-offset-2"
                       : ""
                   }
-                  ${checked ? "bg-green-500" : "bg-zinc-300"}
+                  ${checked ? "bg-lime-500" : "bg-zinc-300"}
                     flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none `
                 }
               >

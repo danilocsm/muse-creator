@@ -56,7 +56,7 @@ function OMIPlayer() {
     let synthPart = new Tone.Sequence(
       (time, note) => {
         setCurrentNote(note.note);
-        synth.triggerAttackRelease(note.note, 0.5, time);
+        synth.triggerAttackRelease(note.note, 0.1, time);
       },
       notesSequence,
       notesVariation
@@ -112,7 +112,7 @@ function OMIPlayer() {
                           ? "ring-2 ring-white ring-opacity-60 ring-offset-2"
                           : ""
                       }
-                  ${checked ? "bg-green-500" : "bg-zinc-300"}
+                  ${checked ? "bg-orange-500" : "bg-zinc-300"}
                     flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none h-[calc(10vh-1rem)]`
                     }
                   >
@@ -127,8 +127,8 @@ function OMIPlayer() {
             </div>
           </RadioGroup>
         </div>
-        <div className="w-[calc(70vw-1rem)] h-[calc(75vh-1rem)] bg-zinc-300 rounded-[20px] shadow-md grid place-items-center">
-          <div className="grid grid-cols-7 gap-x-6">
+        <div className="w-[calc(40vw-1rem)] h-[calc(65vh-1rem)] bg-zinc-300 rounded-[20px] opacity-80 shadow-md grid place-items-center">
+          <div className="grid grid-cols-7 gap-x-1">
             {noteTiles.map((tile) => {
               return (
                 <NoteTile
