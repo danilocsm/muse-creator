@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-white;
+  @apply grid place-items-center;
+  @apply overflow-x-hidden;
+}
