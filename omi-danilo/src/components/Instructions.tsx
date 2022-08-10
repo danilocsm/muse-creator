@@ -32,28 +32,31 @@ const Instructions = () => {
           1. Primeiro, selecione um tipo de instrumento.
         </li>
         <li className="font-serif text-[22px] text-left w-full">
-          2. Depois, clique no botão para adicionar notas musicais
+          2. Depois, clique no botão para adicionar notas musicais. Selecione as
+          notas e para cada nota adicione um multiplicador para sua duração
+          (0.1, 0.5 ou 1).
         </li>
         <li className="font-serif text-[22px] text-left w-full">
-          3. Você pode escolher diferente tempos para as notas utilizando os
-          botões ao lado do botão de play
+          3. Após selecionar sua sequência de notas, escolha os tempos entre
+          notas. Existem 3 tempos disponíveis (2n, 4n e 8n).
         </li>
         <li className="font-serif text-[22px] text-left w-full">
           4. Além disso, você pode determinar frequências de BPM diferentes (1x,
           1.25x, 1.5x, 1.75x, 2x).
         </li>
         <li className="font-serif text-[22px] text-left w-full">
-          5. Quando tiver com todas as opções configuradas, aperte o play e
-          relaxe escutando sua música!
+          5. Quando estiver com todas as suas opções configuradas, aperte o play
+          e relaxe escutando sua música!
         </li>
         <li className="font-serif text-[22px] text-left w-full">
-          6. Caso deseja remover o alguma nota especifica, clique no botão de
-          adicionar notas e em seguida clique na nota que deseja remover. Se
-          prefereir, clique na lixeira para limpar todas as notas!
+          6. Caso deseje alterar qualquer configuração, como mudar a sequência
+          de notas ou o valor de BPM, por exemplo, clique no stop, faça suas
+          modificações e clique no play novamente.
         </li>
         <li className="font-serif text-[22px] text-left w-full">
-          7. Sempre que quiser trocar as configurações, aperte no pause e dê
-          play novamente para as novas configurações entrarem em ação.
+          7. DICA: Para alterar sua sequência de notas, você pode clicar em cada
+          uma individualmente para remover notas especificas ou clicar na
+          lixeira para limpar tudo.
         </li>
         <li className="font-serif text-[22px] text-left w-full">
           8. Use sua criatividade para criar os mais diversos tipos de melodias.

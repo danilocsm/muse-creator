@@ -7,7 +7,6 @@ import { PlayerContext } from "./OMIPlayer";
 
 const notesVariations = ["2n", "4n", "8n"];
 const notesVelocities = [1, 1.25, 1.5, 1.75, 2];
-const notesDuration = [0.1, 0.5, 1];
 
 function FooterButtons() {
   const [variation, setVariation] = useState<string>("8n");

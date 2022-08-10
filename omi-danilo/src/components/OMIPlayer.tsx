@@ -56,7 +56,7 @@ function OMIPlayer() {
     let synthPart = new Tone.Sequence(
       (time, note) => {
         setCurrentNote(note.note);
-        synth.triggerAttackRelease(note.note, 0.1, time);
+        synth.triggerAttackRelease(note.note, note.duration, time);
       },
       notesSequence,
       notesVariation
