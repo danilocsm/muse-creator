@@ -1,4 +1,3 @@
-import { confirm } from "react-confirm-box";
 import { Plus } from "phosphor-react";
 
 interface AddNoteButtonProps {
