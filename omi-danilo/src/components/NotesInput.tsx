@@ -43,7 +43,7 @@ function NotesInput({
       variants={variants}
       animate="active"
       exit={{ height: "0%", transition: { ease: "easeOut", duration: 0.5 } }}
-      className="absolute sm:w-[54vw] h-[70vh] sm:h-[calc(35vh-1rem)] bg-zinc-200 grid place-items-center gap-y-6 rounded-[20px] p-2 mx-10"
+      className="absolute bottom-10 sm:w-[54vw] h-[70vh] sm:h-[calc(35vh-1rem)] bg-zinc-200 grid place-items-center gap-y-6 rounded-[20px] p-2 mx-10"
     >
       <motion.button
         initial={{ display: "block" }}
