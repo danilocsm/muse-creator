@@ -19,7 +19,7 @@ function FooterButtons() {
   }, [variation]);
 
   return (
-    <footer className="relative w-[calc(60vw-1rem)] grid grid-flow-col gap-x-4 place-items-center pt-4">
+    <footer className="relative w-[calc(60vw-1rem)] grid grid-flow-row sm:grid-flow-col gap-x-4 place-items-center pt-4">
       <button
         onClick={() => {
           context.Tone.Transport.bpm.value = 100 * velocity;
@@ -93,7 +93,7 @@ function FooterButtons() {
         <RadioGroup.Label className="text-center text-[20px] font-bold">
           Velocidade
         </RadioGroup.Label>
-        <div className="grid grid-cols-5 gap-2">
+        <div className="grid grid-cols-5 sm:gap-x-10 gap-12">
           {notesVelocities.map((velocity) => {
             return (
               <RadioGroup.Option
@@ -106,7 +106,7 @@ function FooterButtons() {
                       : ""
                   }
                   ${checked ? "bg-lime-500" : "bg-zinc-300"}
-                    flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none `
+                    flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none w-[calc(6vw-1rem)]`
                 }
               >
                 {({ active, checked }) => (

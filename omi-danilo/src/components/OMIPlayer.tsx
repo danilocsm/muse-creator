@@ -127,8 +127,8 @@ function OMIPlayer() {
             </div>
           </RadioGroup>
         </div>
-        <div className="w-[calc(40vw-1rem)] h-[calc(65vh-1rem)] bg-zinc-300 rounded-[20px] opacity-80 shadow-md grid place-items-center">
-          <div className="grid grid-cols-7 gap-x-1">
+        <div className="relative md:pl-0 ml-[150px] md:w-[calc(40vw-1rem)] w-[calc(55vw-1rem)]  h-[calc(65vh-1rem)]   sm:bg-zinc-300 rounded-[20px] opacity-80 shadow-md grid place-items-center">
+          <div className="grid grid-cols-7 md:gap-x-1 w-full">
             {noteTiles.map((tile) => {
               return (
                 <NoteTile

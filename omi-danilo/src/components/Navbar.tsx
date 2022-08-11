@@ -10,7 +10,7 @@ function Navbar() {
       <AppLogo className="absolute top-0 left-4 rounded-[20px] mt-1 h-[calc(95%-1rem)] w-[calc(15%-1rem)]" />
       <button
         onClick={() => context.setShowInstructions(true)}
-        className="text-white absolute right-60 text-[36px] hover:underline"
+        className="text-white absolute md:right-60 right-10 text-[36px] hover:underline"
       >
         Instruções
       </button>

@@ -19,7 +19,7 @@ function AddNoteButton({ onAdd, note, bgColor }: AddNoteButtonProps) {
     render: (message: string, onConfirm: () => void, onCancel: () => void) => {
       return (
         <>
-          <div className="w-[calc(30vw-1rem)] h-[calc(30vh-1rem)] bg-zinc-400 grid grid-flow-row place-items-center rounded-[20px]">
+          <div className="sm:w-[calc(30vw-1rem)] w-[calc(58vw-1rem)] h-[calc(30vh-1rem)] bg-zinc-400 grid grid-flow-row place-items-center rounded-[20px]">
             <h1 className="text-[20px] text-center">{message}</h1>
 
             <div className="w-full flex flex-row gap-x-2 items-center justify-center">

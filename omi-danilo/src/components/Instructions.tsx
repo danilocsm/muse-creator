@@ -13,12 +13,12 @@ const Instructions = () => {
       variants={variants}
       animate={["active"]}
       exit={{ height: "0%", transition: { ease: "easeOut", duration: 0.5 } }}
-      className="relative w-screen bg-zinc-200 grid place-items-center"
+      className="relative w-screen bg-zinc-200 grid place-items-center overflow-y-auto sm:overflow-hidden"
     >
       <motion.button
         initial={{ display: "block" }}
         exit={{ display: "none" }}
-        className="absolute left-[calc(25%-1rem)] top-10 text-[24px] hover:text-red-500"
+        className="absolute sm:left-[calc(25%-1rem)] top-10 left-4 text-[24px] hover:text-red-500"
         onClick={() => context.setShowInstructions(false)}
       >
         <XCircle size={50} />
@@ -26,7 +26,7 @@ const Instructions = () => {
       <motion.ol
         initial={{ display: "block" }}
         exit={{ display: "none" }}
-        className="absolute top-10 left-[calc(30%-1rem)] w-[calc(50vw-1rem)]"
+        className="absolute top-10 left-[calc(30%-1rem)] sm:w-[calc(50vw-1rem)] w-[calc(65vw-1rem)]"
       >
         <li className="font-serif text-[22px] text-left w-full">
           1. Primeiro, selecione um tipo de instrumento.
