@@ -6,7 +6,7 @@ import OMIPlayer from "./OMIPlayer";
 
 export const OMIContext = createContext<{
   showMenu: boolean;
-  setShowInstructions: (newValue: boolean) => void;
+  setShowInstructions: (newValue: any) => void;
 }>({
   showMenu: false,
   setShowInstructions: () => undefined,
