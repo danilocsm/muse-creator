@@ -87,10 +87,11 @@ function OMIPlayer() {
       }}
     >
       <div className="relative w-screen grid place-items-center mt-4">
-        <div className="absolute left-0 top-0  bg-opacity-20 w-[calc(15vw-1rem)] h-[calc(30vh-1rem)] rounded-[20px] ml-4 grid place-items-center bg-zinc-400">
+        <div className="absolute left-0 top-0  bg-opacity-20 w-[calc(15vw-1rem)] h-[calc(30vh-1rem)] rounded-[20px] ml-4 grid place-items-center">
           <label className="text-[20px] font-bold place-self-center">
             SINTETIZADOR
           </label>
+
           <RadioGroup
             value={synthName}
             onChange={(instrument: string) => {
@@ -127,8 +128,9 @@ function OMIPlayer() {
             </div>
           </RadioGroup>
         </div>
-        <div className="relative md:pl-0 ml-[150px] md:w-[calc(40vw-1rem)] w-[calc(55vw-1rem)]  h-[calc(65vh-1rem)]   sm:bg-zinc-300 rounded-[20px] opacity-80 shadow-md grid place-items-center">
-          <div className="grid grid-cols-7 md:gap-x-1 w-full">
+
+        <div className="relative md:pl-0 ml-[150px] md:w-[45vw] w-[55vw]  h-[calc(65vh-1rem)] sm:bg-zinc-300 rounded-[20px] opacity-80 shadow-md grid place-items-center">
+          <div className="grid grid-cols-7 md:gap-x-3">
             {noteTiles.map((tile) => {
               return (
                 <NoteTile
@@ -141,6 +143,7 @@ function OMIPlayer() {
             })}
           </div>
         </div>
+
         <FooterButtons />
       </div>
     </PlayerContext.Provider>

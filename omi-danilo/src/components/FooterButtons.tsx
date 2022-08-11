@@ -19,7 +19,7 @@ function FooterButtons() {
   }, [variation]);
 
   return (
-    <footer className="relative w-[calc(60vw-1rem)] grid grid-flow-row sm:grid-flow-col gap-x-4 place-items-center pt-4">
+    <footer className="relative w-[calc(90vw-1rem)] h-fit grid grid-flow-row sm:grid-flow-col gap-2 place-items-center pt-4 mb-4 px-4">
       <button
         onClick={() => {
           context.Tone.Transport.bpm.value = 100 * velocity;
@@ -40,6 +40,7 @@ function FooterButtons() {
         <Plus size={40} />
         <MusicNotes size={40} />
       </button>
+
       <AnimatePresence>
         {showNotesInput && (
           <NotesInput
@@ -58,7 +59,7 @@ function FooterButtons() {
         <RadioGroup.Label className="text-center text-[20px] font-bold">
           Tempo entre notas
         </RadioGroup.Label>
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-flow-col gap-1 w-[calc(20vw-1rem)]">
           {notesVariations.map((variation) => {
             return (
               <RadioGroup.Option
@@ -93,7 +94,7 @@ function FooterButtons() {
         <RadioGroup.Label className="text-center text-[20px] font-bold">
           Velocidade
         </RadioGroup.Label>
-        <div className="grid grid-cols-5 sm:gap-x-10 gap-12">
+        <div className="grid grid-flow-col gap-2 w-[calc(40vw-1rem)]">
           {notesVelocities.map((velocity) => {
             return (
               <RadioGroup.Option
@@ -106,12 +107,12 @@ function FooterButtons() {
                       : ""
                   }
                   ${checked ? "bg-lime-500" : "bg-zinc-300"}
-                    flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none w-[calc(6vw-1rem)]`
+                    flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none w-[calc(8vw-1rem)]`
                 }
               >
                 {({ active, checked }) => (
                   <div className="flex w-full items-center justify-center">
-                    <div className="text-[20px]">{`${velocity}x`}</div>
+                    <div className="sm:text-[20px] text-[16px]">{`${velocity}x`}</div>
                   </div>
                 )}
               </RadioGroup.Option>

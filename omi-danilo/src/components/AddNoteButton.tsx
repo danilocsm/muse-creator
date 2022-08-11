@@ -19,7 +19,7 @@ function AddNoteButton({ onAdd, note, bgColor }: AddNoteButtonProps) {
     render: (message: string, onConfirm: () => void, onCancel: () => void) => {
       return (
         <>
-          <div className="sm:w-[calc(30vw-1rem)] w-[calc(58vw-1rem)] h-[calc(30vh-1rem)] bg-zinc-400 grid grid-flow-row place-items-center rounded-[20px]">
+          <div className="absolute right-[-150px] sm:w-[calc(30vw-1rem)] w-[calc(65vw-1rem)] h-[calc(30vh-1rem)] bg-zinc-400 grid grid-flow-row place-items-center rounded-[20px]">
             <h1 className="text-[20px] text-center">{message}</h1>
 
             <div className="w-full flex flex-row gap-x-2 items-center justify-center">
@@ -52,13 +52,13 @@ function AddNoteButton({ onAdd, note, bgColor }: AddNoteButtonProps) {
             <div className="flex flex-row items-center justify-center w-full gap-x-4 px-2">
               <button
                 onClick={onConfirm}
-                className="rounded-[20px] bg-green-500 w-[calc(40%-1rem)] h-full hover:text-white hover:border-[1px] hover:border-whiter"
+                className="rounded-[20px] bg-green-500 w-[calc(50%-1rem)] h-full hover:text-white hover:border-[1px] hover:border-whiter"
               >
                 Confirmar
               </button>
               <button
                 onClick={onCancel}
-                className="rounded-[20px] bg-red-500 w-[calc(40%-1rem)] h-full hover:text-white hover:border-[1px] hover:border-whiter"
+                className="rounded-[20px] bg-red-500 w-[calc(50%-1rem)] h-full hover:text-white hover:border-[1px] hover:border-whiter"
               >
                 Sair
               </button>
@@ -88,7 +88,7 @@ function AddNoteButton({ onAdd, note, bgColor }: AddNoteButtonProps) {
     <button
       id={`${note}`}
       onClick={onClick}
-      className={`flex flex-row items-center justify-center rounded-[10px] ${bgColor} w-[100px] h-[50px] hover:opacity-50 text-white font-bold text-[30px]`}
+      className={`flex flex-row items-center justify-center rounded-[10px] ${bgColor} sm:w-[7vw] w-[100px] h-[50px] hover:opacity-50 text-white font-bold text-[30px]`}
     >
       {note.name}
       <Plus />

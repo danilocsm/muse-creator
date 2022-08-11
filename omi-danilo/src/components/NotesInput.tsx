@@ -43,7 +43,7 @@ function NotesInput({
       variants={variants}
       animate="active"
       exit={{ height: "0%", transition: { ease: "easeOut", duration: 0.5 } }}
-      className="absolute sm:w-[calc(60vw-1rem)]  w-[calc(90vw-1rem)] h-[calc(70vh-1rem)] sm:h-[calc(35vh-1rem)] bg-zinc-200 grid place-items-center gap-y-6 rounded-[20px] sm:bottom-2 sm:left-2 py-2"
+      className="absolute sm:w-[54vw] h-[70vh] sm:h-[calc(35vh-1rem)] bg-zinc-200 grid place-items-center gap-y-6 rounded-[20px] p-2 mx-10"
     >
       <motion.button
         initial={{ display: "block" }}
@@ -53,6 +53,7 @@ function NotesInput({
       >
         <XCircle size={50} />
       </motion.button>
+
       <motion.button
         initial={{ display: "block" }}
         exit={{ display: "none" }}
@@ -61,10 +62,11 @@ function NotesInput({
       >
         <Trash size={50} />
       </motion.button>
+
       <motion.div
         initial={{ display: "flex" }}
         exit={{ display: "none" }}
-        className="flex-wrap flex-row gap-2 sm:m-0 mt-12 justify-center w-[calc(50vw-1rem)] sm:w-[calc(70%-1rem)] h-[calc(25vh-1rem)] sm:h-[350px] overflow-y-auto overflow-x-hidden p-4 border-[1px] border-black rounded-[20px]"
+        className="flex-wrap flex-row gap-2 sm:m-0 mt-12 justify-center overflow-y-auto overflow-x-hidden p-4 h-[20vh] sm:h-[25vh]"
       >
         {notesSequence?.length > 0 &&
           notesSequence.map((note) => {
@@ -82,7 +84,7 @@ function NotesInput({
       <motion.div
         initial={{ display: "grid" }}
         exit={{ display: "none" }}
-        className="sm:grid-flow-col grid-cols-3 grid-place-items-center gap-x-2 w-full h-[200px] px-3"
+        className="sm:grid-flow-col grid-cols-2 place-items-center gap-2 w-[52vw]"
       >
         {notes.map((note) => {
           return (
