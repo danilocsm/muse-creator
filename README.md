@@ -37,10 +37,6 @@ git clone https://github.com/danilocsm/omi-danilo.git
 #### Installing dependecies
 
 ```console
-cd omi-danilo
-```
-
-```console
 npm install
 ```
 
